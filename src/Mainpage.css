@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+ 
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    overflow-x: hidden;
+
+}
+.score-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    gap: 2rem;
+}
+.score-div .total-score span{
+font-size: 5rem;
+font-weight: 900;
+}
+.number-selection{
+    position: relative;
+}
+.number-selection .boxes{
+gap: 1rem;
+}
+.boxes .box{
+    width: 3rem;
+    height: 3rem;
+    font-weight:800 ;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.number-selection h2{
+    position: absolute;
+    right: 0;
+    bottom: -3rem;
+}
+.dice-card{
+    justify-content: flex-start;
+    padding: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+}
+.dice-card .img{
+    width: 8rem;
+    height: 40%;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.dice-card h3{
+    font-size: 1rem;
+}
+.buttons{
+    flex-direction: column;
+    gap: .5rem;
+}
+.buttons button{
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: .5rem 2.2rem;
+    cursor: pointer;
+    border-radius: .4rem;
+}
+.buttons button:nth-child(1){
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+}
